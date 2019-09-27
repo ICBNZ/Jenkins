@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jenkins CI</title>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- CSS stylesheet -->
+<link href="style1.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+</head>
+
+<body>
+  <header>
+         <div class="cont">
+           <!-- ICONS -->
+             <div class="boxes">
+               <ul>
+                 <li id="logo1"><a style="cursor: pointer;"><img src="img/jenkinslogo.png" alt="logo"></a></li>
+                 <li class="one"><a style="cursor: pointer;"><img src="img/setup.png" alt="icon1"></a></li>
+                 <li class="two"><a style="cursor: pointer;"><img src="img/pluginicon.png" alt="icon2"></a></li>
+                 <li class="three"><a style="cursor: pointer;"><img src="img/fileicon.png" alt="icon3"></a></li>
+                 <li class="four"><a style="cursor: pointer;"><img src="img/pipelineicon.png" alt="icon4"></a></li>
+               </ul>
+             </div>
+          </div>
+
+        <!-- INFO -->
+        <div class="info">
+            <div class="icon">
+              <div class="cont">
+                <h2> JENKINS CI</h2><br>
+                  <p>Jenkins CI is a very popular continuous integration and continuous delivery tool. Jenkins offers support for a huge range of languages and source code systems with plugins for integrations to automate all types of tasks and and huge range of plugin extensions. It allows developers to create and visualise continuous delivery pipelines, automate testing and build processes.</p><br>
+                  <hr style="border: 0.2px solid white; width:50%;" />
+                  <h4>Click on the icons above to learn how Jenkins works</h4>
+               </div>
+            </div>
+
+            <!-- SETUP -->
+          <div class="icon1">
+            <div class="cont">
+                 <h2> JENKINS CI SETUP</h2><br>
+              <div id="boxes">
+                <div id="info1"><img src="img/setupjenkins.png" alt="icon3"></div>
+                <div id="info2">
+                  <p>Download and install Jenkins from https://jenkins.io/download.
+                  Open the terminal and navigate to the folder with the jenkins.war file in it.<br>
+                  Paste the following to start jenkins on localhost:8080 or an alternative port:<br>
+                  java -jar jenkins.war --ajp13Port=-1 --httpPort=8080</p>
+                </div>
+                <div id="info1"><img src="img/jenkinslogin.png" alt="icon3"></div>
+                <div id="info2">
+                  <p>Open browser at the specified port eg. localhost:8080. You will be prompted to add your
+                    authentication code given in the terminal, then go ahead and create an account.
+                    After logging in, you will initially be taken to the home page with the original UI.</p>
+                </div>
+              </div>
+             </div>
+            </div>
+
+
+            <!-- PLUGINS -->
+            <div class="icon4">
+              <div class="cont">
+                <h2>JENKINS PLUGINS</h2>
+                <p>One of the main features of Jenkins is it's large range of plugins and ability to extend functionality.</p><br>
+                <h2> Jenkins UI </h2>
+                <p>Pipelines can be created with the original UI or new version known as Blue Ocean. This provides an improved user experience with pipeline visualisation, guiding users through the process to quickly and easily create pipelines.</p><br>
+
+                <div id="boxes">
+                  <div id="info1"><img src="img/originalvsblueocean.png" alt="icon3"></div>
+                  <div id="info2">
+                    <p>The steps below will run through managing and installing plugins with the example of Blue Ocean.</p>
+                  </div>
+
+                  <div id="info1"><img src="img/managejenkins5.png" alt="icon3"></div>
+                  <div id="info2">
+                    <p>First select 'Manage Jenkins' in the navigation and from the next page select 'Manage Plugins'.</p>
+                  </div>
+                  <div id="info1">
+                    <p>On the following page you will see a number of tabs including 'Updates, Available, Installed and Advanced', select 'Available'. Scrolling through you will see a huge range of available plugins. Use the filter bar to search for 'Blue Ocean' or 'Ocean' in the search bar. </p>
+                  </div>
+                  <div id="info2"><img src="img/managejenkins6.png" alt="icon3"></div>
+
+                  <div id="info1"><img src="img/managejenkins_3.png" alt="icon3"></div>
+                  <div id="info2">
+                    <p>Select the main 'Blue Ocean' plugin from the dropdown and select 'Install without restart' or 'Download now and install after restart'.</p>
+                  </div>
+                  <div id="info1">
+                    <p>Once Succesfully installed, Blue Ocean will appear in the navigation bar. For details on how to use Blue Ocean, select the pipeline icon above.</p>
+                  </div>
+                  <div id="info2"><img src="img/blue_ocean1.png" alt="icon3">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- JENKINSFILE -->
+            <div class="icon2">
+              <div class="cont">
+                <h2> JENKINSFILE</h2>
+                <br>
+              <div id="boxes">
+                <div id="info1">
+                  <img src="img/file.png" alt="icon3">
+                </div>
+                <div id="info2">
+                    <p>The Jenkinsfile contains information about the pipeline process including build, test, deployment, agents, workspace, stages and steps.</p>
+                    <p>When you make changes to your timeline, the Jenkinsfile is updated with changes commited to your version control system.</p>
+                </div>
+               </div>
+              </div>
+            </div>
+
+            <!-- PIPELINE-->
+            <div class="icon3">
+              <div class="cont">
+                <h2>JENKINS PIPELINE</h4>
+                <p>The Jenkins Pipeline allows users to create and visualise continuous delivery pipelines detailing and automating the build, testing and deployment processes.</p>
+                <br>
+                <div id="boxes">
+                  <div id="info1"><img src="img/ocean2.png" alt="icon3"></div>
+                  <div id="info2">
+                    <p>From the Blue Ocean home page you will see a list of all your pipelines. To create a new one,
+                      click the 'New Pipeline' button in the top right.</p>
+                  </div>
+                  <div id="info1">
+                    <p>Next select where your code is stored eg, GitHub. You will be prompted to enter your authorisation token which you will need to retrieve from the version control system.
+                      Once entered and connected, select the organisation, repository and click 'Create Pipeline.'</p>
+                  </div>
+                  <div id="info2"><img src="img/pipeline3.png" alt="icon3"></div>
+                  <div id="info1"><img src="img/bo12.png" alt="icon3"></div>
+                  <div id="info2">
+                    <p>Choose the organisation the repository belongs to and repository name.
+                       You will then be asked if you want to create a new Pipeline or create one from an existing Jenkinsfile.
+                       Upon clicking create new pipeline, you will be taken to a new page where you are able to visualise the pipeline and add stages and steps.</p>
+                  </div>
+                  <div id="info1">
+                     <p> To add a new stage to the pipeline simply click the + symbol on the left and fill in the details in the box on the right. You will first be asked to name your stage eg. Build, Test, Deploy.</p>
+                  </div>
+                  <div id="info2"><img src="img/bo14.png" alt="icon3"></div>
+                  <div id="info1"><img src="img/bo15.png" alt="icon3"></div>
+                  <div id="info2">
+                    <p>You can then add Pipeline settings such as the Agent eg. Docker. You will then be required to add steps to the stage by clicking the 'Add Step' button. You will receive and error if no steps are added successfully. Select from the dropdown box the method of you step eg.'Print message' and enter appropriate details such as the message.
+                  </div>
+                  <div id="info1">
+                     <p>When you have completed your pipeline, click the 'Save' button in the top right.</p>
+                  </div>
+                  <div id="info2"><img src="img/bo16.png" alt="icon3"></div>
+                  <div id="info1">
+                    <p> If you wish to view/edit the script, pressing 'Command + s' on a mac or 'ctrl + s' on windows and a pop up will appear.</p>
+                  </div>
+                  <div id="info2"><img src="img/bo2.png" alt="icon3"></div>
+                  <div id="info1"><img src="img/bo17.png" alt="icon3"></div>
+                  <div id="info2">
+                    <p>The save button will commit a Jenkinsfile, first a modal will appear which will ask for a description of changes and choice of commit to master or new branch. You can then save and run your pipeline.</p>
+                  </div>
+                  <div id="info1">
+                    <p>Next you will be taken to a page listing all your pipelines with details about the status, number of runs, message, repository branch, duration and when completed.</p>
+                  </div>
+                  <div id="info2"><img src="img/pipelines.png" alt="icon3"></div>
+                  <div id="info1"><img src="img/run.png" alt="icon3"></div>
+                  <div id="info2">
+                    <p>Click on the Pipeline to view further details including Pipeline Stages, ouput and time taken, Changes/commits, Tests, Artifacts with pipeline log.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+    </div>
+  </header>
+
+        <!-- Javascript  -->
+    <script src="javascript.js"></script>
+    </body>
+</html>
